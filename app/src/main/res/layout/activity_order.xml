@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity"
+    android:background="@drawable/background">
+    
+    <LinearLayout
+        android:id="@+id/activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Binus EzyFood: My Order"
+            android:fontFamily="casual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="32dp"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textColor="#000000"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/Enter_your_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:textColorHint="#000000"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:inputType="textCapWords"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Toppings"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="Menu : "
+            android:textSize="20sp"/>
+
+         <CheckBox
+            android:id="@+id/jus_mangga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jus Mangga"
+            android:textSize="20sp"
+            android:padding="10dp"
+             android:shadowColor="@color/colorAccent"
+             android:shadowDx="4"
+             android:shadowDy="4"
+             android:shadowRadius="4"
+             android:textColor="#000000"
+            android:onClick="mangga"
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/jus_alpukat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jus Alpukat"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:onClick="alpukat"
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/air_mineral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Air Mineral"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:onClick="air_mineral"
+            android:checked="false"/>
+
+
+        <CheckBox
+            android:id="@+id/fanta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fanta"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:padding="10dp"
+            android:onClick="fanta"
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/chocolate_milkshake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chocolate Milkshake"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:padding="10dp"
+            android:onClick="milkshake"
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/lemon_tea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="lemon_tea"
+            android:padding="10dp"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="Lemon Tea"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantity"
+            android:layout_marginTop="10dp"
+            android:text="quantity"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textAllCaps="true"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <Button
+                android:id="@+id/decrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="decrementquantity"
+                android:text="-"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/quantitychange_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="casual"
+                android:shadowColor="@color/colorAccent"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/increment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="incrementquantity"
+                android:text="+"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/order_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="order_summary"
+            android:textAllCaps="true"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/Total_Expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="casual"
+                android:shadowColor="@color/colorAccent"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="Rp. 0"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ORDER"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:onClick="OrderButton">
+            </Button>
+
+            <Button
+                android:id="@+id/pay_now"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAY NOW"
+                android:textAllCaps="true"
+                android:textSize="20sp">
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

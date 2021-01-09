@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopUpActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Binus EzyFood: Top Up"
+            android:fontFamily="casual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="32dp"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textColor="#000000"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/Enter_your_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:textColorHint="#000000"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:inputType="textCapWords"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/order_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="order_summary"
+            android:textAllCaps="true"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/Total_Expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="casual"
+                android:shadowColor="@color/colorAccent"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="Rp. 0"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Toppings"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="Top Up : "
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/sepuluh_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp 10000"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textColor="#000000"
+            android:onClick="sepuluh"
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/duapuluh_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp 20000"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:onClick="duapuluh"
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/duapuluhlima_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp 25000"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:onClick="duapuluhlima"
+            android:checked="false"/>
+
+
+        <CheckBox
+            android:id="@+id/limapuluh_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp 50000"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:padding="10dp"
+            android:onClick="limapuluh"
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/tujuhpuluhlima_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp 75000"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:padding="10dp"
+            android:onClick="tujuhpuluhlima"
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/seratus_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="seratus"
+            android:padding="10dp"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="Rp 100000"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantity"
+            android:layout_marginTop="10dp"
+            android:text="quantity"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textAllCaps="true"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <Button
+                android:id="@+id/decrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="decrementquantity"
+                android:text="-"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/quantitychange_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="casual"
+                android:shadowColor="@color/colorAccent"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/increment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="incrementquantity"
+                android:text="+"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ORDER"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="top up now"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:onClick="TopUpNowButton">
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

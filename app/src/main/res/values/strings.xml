@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">UTS_AndreIrwandi</string>
+    <string name="title">Title</string>
+
+    <string-array name="drink_menu">
+        <item>Jus Mangga</item>
+        <item>Jus Alpukat</item>
+        <item>Air Mineral</item>
+        <item>Fanta</item>
+        <item>Chocolate Milkshake</item>
+        <item>LemonTea</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Rp. 15000</item>
+        <item>Rp. 15000</item>
+        <item>Rp. 5000</item>
+        <item>Rp. 7000</item>
+        <item>Rp. 15000</item>
+        <item>Rp. 7000</item>
+    </string-array>
+
+    <string-array name="stock">
+        <item>17</item>
+        <item>15</item>
+        <item>25</item>
+        <item>64</item>
+        <item>54</item>
+        <item>42</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
